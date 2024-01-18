@@ -28,19 +28,6 @@ body {
     text-decoration: none; 
 }
 
-/* Hover effect */
-#main-nav li:hover {
-    list-style-type: none;
-    background: #232625;
-    padding: 5px;
-    border-bottom: 1px solid #302f2f;
-    color: #35403A;
-}
-
-h1 {
-    color: #35403A;
-}
-
 /* For larger resolution */
 @media only screen and (min-width: 768px) {
     .columns {
