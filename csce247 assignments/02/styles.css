@@ -28,27 +28,35 @@ body {
     text-decoration: none; 
 }
 
+
+/* Hover effect */
+#main-nav li:hover {
+    list-style-type: none;
+    background: #232625;
+    padding: 5px;
+    border-bottom: 1px solid #302f2f;
+    color: #35403A;
+}
+img {
+    max-width: 48%;
+    max-height: 48%;
+}
+
+
 /* For larger resolution */
 @media only screen and (min-width: 768px) {
+    
     .columns {
         display: flex;
         }
-        .columns section {
-            padding: 10px 20px;
-        }
-        .one,
-        #main-nav li {
+        .one {
             flex: 1;
         }
-        .two {
-            flex: 2;
-        }
-
         #main-nav li {
             text-align: center;
             border-bottom: 4px solid transparent;
         }
         #main-nav li:hover {
-            border-bottom: 4px solid #302f2f;
+            border-bottom: 2px solid #302f2f;
         }
 }
