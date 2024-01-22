@@ -1,0 +1,170 @@
+body {
+    font-family: Courier, Arial, Helvetica, sans-serif, sans-serif;
+    background: #BFBFB8;
+}
+
+.columns {
+    border-bottom: #BFBFB8 solid;
+    border-width: 2px;
+    padding-bottom: 5%;
+}
+
+#content {
+    background: #35403A;
+    padding: 5px;
+    width: 88%;
+    /* centers horizontally */
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* Main Navigation */
+
+#main-nav ul {
+    padding-left: 0;
+}
+#main-nav li {
+    list-style-type: none;
+    background: #A4A69C;
+    padding: 5px;
+    margin: 5px 10px;
+    border-bottom: 1px solid #302f2f;
+}
+#main-nav a {
+    color: #35403A;
+    text-decoration: none; 
+    padding: 0 50px;
+}
+
+/* Hover effect */
+#main-nav li:hover {
+    list-style-type: none;
+    background: #302f2f;
+    padding: 5px;
+    border-bottom: 1px solid #302f2f;
+    color: #35403A;
+}
+
+
+.link {
+    border-bottom:#BFBFB8 solid;
+    border-width: 2px;
+}
+
+.link li {
+    list-style-type: none;
+}
+
+.link li:hover {
+    list-style-type: none;
+    background: #302f2f;
+    padding: 5px;
+    border-bottom: 1px solid #302f2f;
+    color: #35403A;
+}
+
+.link a {
+    text-decoration: none;
+    color: #BFBFB8;
+
+}
+
+.idea-card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.idea-card .idea-para {
+    display: flex;
+    flex-direction: column;
+    color: #BFBFB8;
+}
+
+.idea-card .images {
+    display: flex;
+    margin: auto;
+    padding: 5%;
+}
+
+        
+#title-cards {
+    display: flex;
+    flex-direction: column;
+    background-color: #A4A69C;
+    width: auto;
+}
+.title-card {
+    margin: auto;
+}
+
+.title-card h3 {
+    display: flex;
+    justify-content: center;
+    color: #302f2f;
+}
+.title-card img {
+    display: flex;
+    margin: auto;
+}
+.title-card p {
+    display: flex;
+    justify-content: center;    
+    color: #35403A;    
+
+}
+
+
+h1 {
+    color: #BFBFB8;
+}
+
+h2 {
+    color:  #BFBFB8;
+}
+
+h3 {
+    color: #A4A69C;
+}
+
+
+
+/* For larger resolution */
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+        justify-content: space-evenly;
+        }
+
+    #main-nav li {
+            text-align: center;
+            border-bottom: 4px solid transparent;
+        }
+    #main-nav li:hover {
+            border-bottom: 4px solid #302f2f;
+        }
+
+        .idea-card {
+            display: flex;
+            flex-direction: row;
+        }
+        .link-and-idea {
+            display: flex;
+            border-bottom: #BFBFB8 solid;
+        }
+        .link {
+            flex: 1;
+            border-bottom: none;
+            border-width: 2px;
+            margin-right: 2%;
+        }
+        .ideas {
+            flex: 3;
+        }
+
+        #title-cards {
+            display: flex;
+            flex-direction: row;
+        }
+
+}
