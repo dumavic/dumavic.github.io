@@ -21,7 +21,6 @@ body {
     background: #35403A;
     padding: 5px;
     margin: 5px 10px;
-    border-bottom: 1px solid #302f2f;
 }
 #main-nav a {
     color: #BFBFB8;
@@ -35,6 +34,26 @@ body {
     padding: 5px;
     border-bottom: 1px solid #302f2f;
     color: #35403A;
+}
+
+.assignment-card {
+    background: #35403A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 50px;
+    max-width: 470px;
+    min-height: 470px;
+    margin-bottom: 50px;
+}
+
+.assignment-card img {
+    margin: auto;
+    height: 250px;
+}
+
+.assignment-card p {
+    color:#BFBFB8;
 }
 
 h1 {
@@ -63,5 +82,8 @@ h1 {
         }
         #main-nav li:hover {
             border-bottom: 4px solid #302f2f;
+        }
+        .assignment-card {
+            margin-bottom: auto;
         }
 }
