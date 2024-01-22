@@ -32,8 +32,8 @@ body {
 }
 #main-nav a {
     color: #35403A;
-    text-decoration: none; 
-    padding: 0 50px;
+    text-decoration: none;
+    padding: 0 8px;
 }
 
 /* Hover effect */
