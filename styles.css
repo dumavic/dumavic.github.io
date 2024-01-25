@@ -6,11 +6,12 @@ body {
 #content {
     background: #A4A69C;
     padding: 5px;
-    width: 88%;
+    width: 90%;
     /* centers horizontally */
     margin: auto;
     border-radius: 5px;
 }
+
 
 /* Main Navigation */
 #main-nav ul {
@@ -37,8 +38,8 @@ body {
 }
 
 .assignment-card {
-    background: #35403A;
     display: flex;
+    background: #35403A;
     flex-direction: column;
     justify-content: center;
     margin: auto 50px;
@@ -92,3 +93,4 @@ h2 {
             margin-bottom: auto;
         }
 }
+
