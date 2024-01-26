@@ -5,14 +5,16 @@ body {
     line-height: 1.4;
 }
 
+
 header .top-section .black-row{
     margin: 0;
-    padding: 0;
+    padding: 0 1em;
     background-color: #000000;
 }
 
 header .top-section .garnet-row h1{
     margin: 0;
+    padding: 0 1em;
     background-color: #73000a;
     color: white;
 }
@@ -29,7 +31,7 @@ header img {
     list-style-type: none;
     background: #000000;
     padding: 5px;
-    margin: 5px 10px;
+    margin: 3px 10px;
 }
 #main-nav a {
     color: white;
@@ -43,14 +45,17 @@ header img {
     padding: 5px;
 }
 
-
 .top-body {
     font-family: "Berlingske Sans", "Arial", sans-serif
 }
 
+.top-body, .articles {
+    margin: 0 1em;
+}
+
 .top-body img{
     display: flex;
-    margin: auto;
+    max-width: 99%;
 }
 
 .top-body h2 {
@@ -71,6 +76,10 @@ h3 {
     border-bottom: 1px solid #c7c7c7;
 }
 
+.article:hover {
+    background-color: #e9e9e9;
+}
+
 .article .images {
     padding: 0 2%;
 }
@@ -80,12 +89,109 @@ h3 {
     margin: 0;
 }
 
+/* Info box */
+.info-box {
+    border: .5px solid #c7c7c7;
+    margin: 5% 1%;
+    border-left: .4em solid #73000a;
+    padding: 0 2%;
+}
+
+.info-box h1 {
+    font-size: 14px;
+    font-family: "Berlingske Sans Extracondensed", "Impact", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    margin: 0;
+    margin-top: 2%;
+    color: #5C5C5C;
+}
+
+.info-box h2 {
+    margin: 0;
+    font-family: "Berlingske Serif", "Georgia", serif;
+    margin-bottom: 0;
+    line-height: 1.3em;
+    font-size: 1.3em;
+    color:#73000a;
+}
+
+.info-box .bold {
+    margin: 0;
+    display: block;
+    font-family: "Berlingske Sans Extracondensed", "Impact", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .8px;
+    font-size: 3rem;
+    color: #73000a;
+    line-height: 1.2;
+}
+
+.engineering-future {
+    margin: 2% 0; 
+    display: flex;
+}
+
+.engineering-future .info-box-text {
+    flex: 1;
+}
+.engineering-future img {
+    flex: 1;
+    height: auto;
+    width: auto;
+    margin-left: 1em;
+}
+
+.engineering-future b {
+    font-size: 14px;
+}
+
+.engineering-future a {
+    text-decoration: none;
+    color:#73000a;
+}
+
+.engineering-future a:hover {
+    color: #ffffff;
+    background-color: #73000a;
+
+}
+
+.gray-row {
+    display: flex;
+    background-color: #e9e9e9;
+}
+
+.gray-row h1 {
+    font-size: 1.1em;
+    flex: 1;
+}
+
+.gray-row nav {
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.gray-row nav ul {
+    display: flex;
+}
+
+.gray-row nav li {
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.gray-row nav a {
+    color: black;
+    margin: 0.3em;
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 768px) {
     #main-nav li {
-        text-align: center;
-        border-bottom: 4px solid transparent;
+        /* text-align: center; */
     }
-    #main-nav li:hover {
-        border-bottom: 4px solid #302f2f;
-    }
+
 }
