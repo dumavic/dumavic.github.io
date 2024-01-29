@@ -76,6 +76,7 @@ h2 {
         }
         .one,
         #main-nav li {
+            
             flex: 1;
         }
         .two {
