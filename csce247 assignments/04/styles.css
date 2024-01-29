@@ -189,6 +189,91 @@ h3 {
     text-decoration: none;
 }
 
+footer {
+    background-color: #73000a;
+}
+
+footer h2 {
+    color: white;
+    font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color:#ffffff;
+    
+}
+
+footer a:hover {
+    background-color:#be2e3a;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer .images {
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-img {
+    max-width: 300px;
+}
+
+footer .mini-images {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer .mini-images img {
+    margin: 0 1.5%;
+}
+
+footer .footer-row {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-row .bold {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .8px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+footer .footer-row h2 {
+    padding-bottom: 2%;
+    border-bottom: 1px solid white;
+
+}
+
+.colleges-and-schools {
+    display: flex;
+}
+
+.colleges-and-schools .column-one {
+    flex: 1;
+}
+
+.colleges-and-schools .column-two {
+    flex: 1;
+}
+
+.offices-and-divisions {
+    display: flex;
+}
+
+.offices-and-divisions .column-one {
+    flex: 1;
+}
+
+.offices-and-divisions .column-two {
+    flex: 1;
+}
+
 @media only screen and (min-width: 768px) {
     #main-nav li {
         /* text-align: center; */
