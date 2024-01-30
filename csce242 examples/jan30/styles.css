@@ -1,0 +1,18 @@
+body {
+
+}
+
+h1 {
+    color: #849854;
+}
+
+.special {
+    size: 2em;
+    background-color: #849854;
+    color: #433954;
+    border: 2px dotted #945032;
+}
+
+.hidden {
+    display: none;
+}
