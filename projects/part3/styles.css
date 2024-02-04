@@ -194,3 +194,91 @@ ul {
 .footer-bottom p {
     color: var(--tinted-black);
 }
+/* end of home page css */
+
+/* shop page */
+
+#shop-page-mid {
+  margin: 8% 0;
+}
+
+#shop-page-mid .filter {
+  margin: 0 5%;
+}
+
+#shop-page-mid #item-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#shop-page-mid #item-container #shop-top-row {
+  display: flex;
+  justify-content: center;
+}
+
+#shop-page-mid #item-container #shop-bot-row {
+  display: flex;
+  justify-content: center;
+}
+
+#shop-page-mid #item-container .shop-item {
+  max-width: 100%;
+  display: flex;
+  margin: 0 1em;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: var(--dark-gray);
+  color: var(--almost-white);
+  padding: .5em;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--tinted-black);
+  color: var(--white);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #002c50;
+}
+/* end of dropdown */
