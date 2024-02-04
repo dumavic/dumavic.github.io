@@ -268,6 +268,13 @@ ul {
   flex: 1;
 }
 
+#shop-item-page-container .shop-item button {
+  background-color: var(--tinted-black);
+  color:#eeeeee;
+  padding: 1em;
+  max-width: fit-content;
+}
+
 #shop-item-page-container .item-description {
   display: flex;
   flex-direction: column;
@@ -316,6 +323,37 @@ ul {
   color:#eeeeee;
   padding: 1em;
   max-width: fit-content;
+}
+/* end of cart page */
+
+
+/* collections page */
+#collections-page-mid {
+  display: flex;
+  flex-direction: column;
+  margin: 8% 0;
+  justify-content: center;
+}
+
+#collections-page-mid .filter {
+  margin-left: 5%;
+}
+
+#collections-page-mid #new-collection {
+  margin: 3em 0;
+}
+
+#collections-page-mid #shop-top-row {
+  margin-left: 5%;
+  display: flex;
+}
+
+#collections-page-mid #shop-top-row .shop-item {
+  max-width: 100%;
+  display: flex;
+  margin: 0 1em;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /* Style The Dropdown Button */
