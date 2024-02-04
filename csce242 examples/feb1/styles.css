@@ -1,0 +1,55 @@
+:root {
+    --square-top: 0px;
+    --ball-color: skyblue;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgray;
+}
+
+#content {
+    background: #ffff;
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.circle {
+    background: var(--ball-color);
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.rainbow {
+    animation-name: colorAnim;
+    animation-duration: 4s;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    top: var(--square-top);
+}
+
+@keyframes colorAnim {
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: yellow;
+    }
+    40% {
+        background-color: purple;
+    }
+    60% {
+        background-color: blue;
+    }
+    80% {
+        background-color: green;
+    }
+}
