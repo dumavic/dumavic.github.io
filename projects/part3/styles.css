@@ -355,6 +355,32 @@ ul {
   flex-direction: column;
   justify-content: space-evenly;
 }
+/* end of collections */
+
+/* about us page */
+
+#about-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+#about-container #about-container-top {
+  
+}
+
+#about-container #about-container-top img {
+  width: fit-content;
+}
+
+#about-container #about-container-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+#about-container #about-container-bottom p {
+  margin: 5em 15em;
+}
 
 /* Style The Dropdown Button */
 .dropbtn {
