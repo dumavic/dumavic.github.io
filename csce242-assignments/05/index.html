@@ -15,28 +15,30 @@
         <h2>Introduction to JavaScript</h2>
     </header>
 
-    <div>
+    <div class="container">
         <div class="columns">
-            <div class="column">
+            <div class="column" id="column-one">
                 <h2>Change Image</h2>
                 <img src="./images/200.gif" id="changeImg"/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictumst vestibulum rhoncus est pellentesque. Ut sem viverra aliquet eget sit. Dui ut ornare lectus sit. Lacus luctus accumsan tortor posuere. Potenti nullam ac tortor vitae purus. </p>
             </div>
-        </div>
 
-        <div class="columns">
-            <div class="column">
-                <h2>Slider Rotate</h2>
-                <img src="./images/200.gif" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictumst vestibulum rhoncus est pellentesque. Ut sem viverra aliquet eget sit. Dui ut ornare lectus sit. Lacus luctus accumsan tortor posuere. Potenti nullam ac tortor vitae purus. </p>
-
-                <div class="slidecontainer">
-                  <input type="range" min="1" max="360" value="0" class="slider" id="myRange">
-                </div>
-
+          <div class="column" id="column-two">
+            <h2>Slider Rotate</h2>
+            <img id="img-spin" src="./images/200.gif" alt="Rotatable Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictumst vestibulum rhoncus est pellentesque. Ut sem viverra aliquet eget sit. Dui ut ornare lectus sit. Lacus luctus accumsan tortor posuere. Potenti nullam ac tortor vitae purus.</p>
+      
+            <div class="slidecontainer">
+              <input type="range" min="0" max="360" value="1" class="slider" id="myRange">
             </div>
         </div>
 
+          <div class="column" id="add-stars">
+            <h2>Stars</h2>
+            <div id="star-playground">
+            </div>
+          </div>
+        </div>
     </div>
 
     

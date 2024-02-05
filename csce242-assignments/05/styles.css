@@ -1,0 +1,119 @@
+body {
+    font-family: Courier, Arial, Helvetica, sans-serif, sans-serif;
+    background: #BFBFB8;
+}
+header {
+    text-align: center;
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex: 1;
+    border: 1px solid black;
+    margin: 0 1%;
+    flex-direction: column;
+    background-color: #35403A;
+}
+
+.column img {
+    margin: auto;
+}
+
+.column .slidecontainer {
+    margin: auto;
+}
+
+.column h2 {
+    color: white;
+    text-align: center;
+}
+
+.column p {
+    color:#BFBFB8;
+    text-align: center;
+}
+
+#column-one {
+    flex: 1;
+}
+
+#column-two {
+    
+    flex: 1;
+}
+
+#add-stars {
+    flex: 1;
+}
+
+.five-pointed-star {
+    --star-color:orange;
+    margin:1em auto;
+    font-size:3em;
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(35deg);
+   }
+   .five-pointed-star:before {
+    border-bottom: 0.8em solid var(--star-color);
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -0.45em;
+    left: -0.65em;
+    display: block;
+    content:"";
+    transform: rotate(-35deg);
+   }
+   .five-pointed-star:after {
+    position: absolute;
+    display: block;
+    top: 0.03em;
+    left: -1.05em;
+    width: 0;
+    height: 0;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(-70deg);
+    content:"";
+   }
+
+   @media only screen and (max-width: 1020px) {
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+}
+.column {
+    display: flex;
+    margin: 2em 0;
+    padding: auto;
+}
+
+.column img {
+    margin: auto;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#add-stars {
+    min-height: 300px;
+}
+
+   }
