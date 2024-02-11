@@ -212,18 +212,19 @@ ul {
 
 #shop-page-mid #item-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
 #shop-page-mid #item-container #shop-top-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #shop-page-mid #item-container #shop-bot-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #shop-page-mid #item-container .shop-item {
@@ -340,6 +341,7 @@ ul {
 
 #collections-page-mid .filter {
   margin-left: 5%;
+  
 }
 
 #collections-page-mid #new-collection {
@@ -542,7 +544,6 @@ background-color: grey;
     justify-content: center;
 
   }
-  
 
   #shop-page-mid #item-container {
     display: flex;
