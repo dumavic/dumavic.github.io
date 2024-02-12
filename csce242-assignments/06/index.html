@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Victor's Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+        <h1>Assignment 8</h1>
+        <h2>If Statements</h2>
+        <div class="dropdown">
+            <button class="dropbtn">Exercises</button>
+            <div class="dropdown-content">
+                <nav class="navi">
+                    <p id="exercise-one-toggle-mobile"><a href="#">Exercise 1</a></p>
+                    <p id="exercise-two-toggle-mobile"><a href="#">Exercise 2</a></p>
+            </div>
+          </div>
+
+        <nav class="nav">
+            <h3><span id="exercise-one-toggle">Exercise 1</span> | <span id="exercise-two-toggle">Exercise 2</span></h3>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div id="exercise-one">            
+            <div class="columns">
+                <div class="column">
+                    <h2>Enter Command</h2>
+                    <ul>
+                        <li>b: Read a book</li>
+                        <li>c: Act like a clown</li>
+                        <li>p: Have a birthday party</li>
+                        <li>r: Walk in the rain</li>
+                        <li>s: Shovel up some dirt</li>
+                        <li>w: Go to work</li>
+                    </ul>
+                    <input type="text" id="txt-commands" name="txt-commands" placeholder="enter command">
+                    <img src="./images/original.jpg" id="changeImg"/>
+                    <p>
+                        Image by
+                        <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2">Freepik</a>
+                        </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="exercise-two" class="show-hide">            
+            <div class="columns">
+                <div class="column">
+                    <h2>Yoga Slide</h2>
+                    <img src="./images/yoga1.jpg" id="slideImg"/>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="400" value="1" class="slider" id="myRange">
+                      </div>
+            </div>
+            </div>
+        </div>
+
+
+        </div>
+  </body>
+
+  <script src="script.js"></script>
+  </html>
