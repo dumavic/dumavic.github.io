@@ -264,69 +264,66 @@ ul {
 }
 
 /* jacket page */
-#shop-item-page-container {
-  display: flex;
-  flex-direction: column;
+#item-page-container {
   margin: 5% 0;
   padding: 5% 0;
   background-color: var(--pale-gray);
+  display: flex;
 }
 
-#shop-item-page-container .item-showcase {
+#item-page-container .item-showcase {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
-.shop-item a {
-  text-decoration: none;
+
+#item-page-container .item-showcase .shop-items {
+  display: flex;
+  justify-content: center;
 }
 
-#shop-item-page-container .shop-item {
-  width: fit-content;
-  background-color: var(--tinted-black);
-  box-shadow: 2px 2px 10px 0px var(--black);
+#item-page-container .item-showcase .shop-items .shop-item {
+  display: flex;
+  max-width: fit-content;
 }
 
-#shop-item-page-container .shop-item .shop-item-img {
+#item-page-container .shop-item .shop-item-img {
   margin: 1em;
-  flex: 1;
 }
 
-#shop-item-page-container .shop-item img {
+#item-page-container .shop-item img {
   width: 300px;
   height: 300px;
 }
 
-#shop-item-page-container .shop-item .shop-item-info {
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
+#item-page-container .shop-item .shop-item-info {
   margin: 1.5em 1em; 
   flex: 1;
 }
 
-#shop-item-page-container .shop-item .shop-item-info p {
+#item-page-container .shop-item .shop-item-info p {
   flex: 1;
-  color: var(--pale-gray);
+  color: var(--tinted-black);
 }
 
-#shop-item-page-container .shop-item button {
-  background-color: var(--tinted-black);
-  color:#eeeeee;
+#item-page-container .shop-item button {
+  background-color: none;
+  color: var(--black);
   padding: 1em;
   max-width: fit-content;
 }
 
-#shop-item-page-container .item-description {
+#item-page-container .item-description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  max-width: 80%;
+  color: var(--white); 
+  margin: 0 25%;
 }
 
-#shop-item-page-container .item-description p {
-  color: var(--almost-white);
+#item-page-container .item-description p {
+  color: var(--black);
+
+
 }
 /* end of jacket */
 
@@ -813,6 +810,20 @@ background-color: grey;
   color:#eeeeee;
   padding: 1em;
   max-width: fit-content;
+}
+
+#item-page-container .item-showcase .shop-items .shop-item {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+}
+
+
+#item-page-container .item-description {
+  display: flex;
+  flex-direction: column;
+  color: var(--white); 
+  margin: 0 3%;
 }
 
 }
