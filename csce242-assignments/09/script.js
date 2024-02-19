@@ -1,4 +1,5 @@
-const showHide = (e, onclick) => {
+const showHide = () => {
+
     document.getElementById("exercise-one").classList.toggle('show-hide');
     document.getElementById("exercise-two").classList.toggle('show-hide');
     
