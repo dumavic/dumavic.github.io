@@ -1,8 +1,38 @@
-const showHide = () => {
+const showHide = (e) => {
 
-    document.getElementById("exercise-one").classList.toggle('show-hide');
-    document.getElementById("exercise-two").classList.toggle('show-hide');
+    const exOne = document.getElementById("exercise-one");
+    const exTwo = document.getElementById("exercise-two");
     
+    // If exercise one's toggle is clicked
+    if(e.target.id === "exercise-one-toggle" || e.target.id === "exercise-one-toggle-mobile") {
+      
+      // if exercise one is hidden then show it and hide exercise two
+      if(exOne.classList.contains("show-hide")) {
+        exOne.classList.remove("show-hide");
+        exTwo.classList.add("show-hide");
+
+        // if exercise one is hidden then add the class show-hide to exercise one and hide exercise two
+        if(exTwo.classList.contains("show-hide" == false)) {
+          exTwo.classList.add("show-hide");
+        }
+      }
+      
+    }
+
+    // If exercise two's toggle is clicked
+    else if(e.target.id === "exercise-two-toggle"|| e.target.id === "exercise-two-toggle-mobile") {
+
+      // if exercise two is hidden then show it and hide exercise one
+      if(exTwo.classList.contains("show-hide")) {
+        exTwo.classList.remove("show-hide");
+        exOne.classList.add("show-hide");
+
+        // if exercise two is hidden then add the class show-hide to exercise two and hide exercise one
+        if(exOne.classList.contains("show-hide" == false)) {
+          exOne.classList.add("show-hide");
+        }
+    }
+  }
 };
 
 
