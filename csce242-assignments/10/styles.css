@@ -1,0 +1,37 @@
+body {
+    font-family: Courier, Arial, Helvetica, sans-serif, sans-serif;
+    background: #BFBFB8;
+}
+
+p, a {
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    margin: 0 20% 10% 20%;
+}
+
+.container #ad {
+    color: white;
+}
+
+.columns {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.columns .column {
+    padding: 3% 0;
+    background-color: #35403A;
+    color: white;
+}
+
+.columns .column #image-div p {
+    margin-bottom: 8%;
+}
