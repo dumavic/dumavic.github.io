@@ -95,34 +95,39 @@ const getHousePlans = async () => {
 
     // creating floorplans
     let floorplans = document.createElement("div");
-    let floorplansImg = document.createElement("img");
-    let floorplanName = document.createElement("h3");
+    floorplans.classList.add("floorplans");
 
 
+    for (let i=0; i < house.floor_plans.length; i++) {
     
-    // house.floor_plans.slice().forEach( async plan => {
-    //     floorplansImg.classList.add("floorplans");
+      let floorplan = document.createElement("div");
+      floorplan.classList.add("floorplan");
 
-    //     floorplanName.innerHTML = await plan.name;
-    //     floorplansImg.src = await `https://portiaportia.github.io/json/images/house-plans/`+ plan.image;
-    //     floorplans.append(floorplanName);
-    //     floorplans.append(floorplansImg);
-
-    // });
-
-    house.floor_plans.forEach(async plan => {
-
-        floorplans.classList.add("floorplans");
-        floorplanName.innerHTML += await plan.name;
-        floorplansImg.src += await `https://portiaportia.github.io/json/images/house-plans/`+ plan.image;
-        floorplans.append(floorplanName);
-        floorplans.append(floorplansImg);
-    });
-
+      
+      let floorplanName = document.createElement("h3");
+      floorplanName.innerHTML += house.floor_plans[i].name;
+      
+      let floorplansImg = document.createElement("img");
+      floorplansImg.src = `https://portiaportia.github.io/json/images/house-plans/` + house.floor_plans[i].image;
+    
+      floorplan.appendChild(floorplanName);
+      floorplan.appendChild(floorplansImg);
+    
+      floorplans.appendChild(floorplan);
+    }
+    
     rowThree.append(floorplans);
     section.append(rowThree);
-
+    
     return section;
+    
+        // house.floor_plans.forEach(async plan => {
+        //     floorplanName.innerHTML += await plan.name;
+        //     floorplansImg.src += await `https://portiaportia.github.io/json/images/house-plans/`+ plan.image;
+        //     floorplans.append(floorplanName);
+        //     floorplans.append(floorplansImg);
+    
+        // });
 
   };
   

@@ -18,7 +18,7 @@ header {
 #columns {
     text-align: center;
     background-color: #203020;
-    padding: 10%;
+    padding: 5% 10% 10% 5%;
 }
 
 #columns h2 {
@@ -28,6 +28,7 @@ header {
 .column {
     background-color: #0c200c;
     padding: 5%;
+    margin-bottom: 5%;
 }
 .row-two {
     display: flex;
@@ -50,5 +51,31 @@ header {
 }
 
 .row-three img{
-    width:500px;
+    width: 85%;
+}
+
+.floorplans {
+    display: flex;
+}
+
+.floorplan {
+    margin: 1%;
+}
+
+@media only screen and (max-width: 1020px) {
+
+    #columns {
+        text-align: center;
+        background-color: #203020;
+        padding: 2%;
+    }
+
+    .floorplans {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-three img{
+        width: 70%;
+    }
 }
