@@ -120,14 +120,6 @@ const getHousePlans = async () => {
     section.append(rowThree);
     
     return section;
-    
-        // house.floor_plans.forEach(async plan => {
-        //     floorplanName.innerHTML += await plan.name;
-        //     floorplansImg.src += await `https://portiaportia.github.io/json/images/house-plans/`+ plan.image;
-        //     floorplans.append(floorplanName);
-        //     floorplans.append(floorplansImg);
-    
-        // });
 
   };
   
