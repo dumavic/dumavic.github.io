@@ -9,7 +9,6 @@ body {
     justify-content: center;
     background: #A4A69C;
     width: 95%;
-    /* centers horizontally */
     margin: auto;
     border-radius: 5px;
 }
@@ -25,11 +24,13 @@ h2 {
 
 
 #assignment-section {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
     max-width: 80%;
 }
+
 
 #assignment-section a {
     text-decoration: none;
