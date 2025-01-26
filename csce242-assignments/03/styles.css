@@ -46,9 +46,54 @@ body {
 }
 
 
+
+.idea-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #3c5046;
+    margin: 100px;
+    padding: 50px;
+}
+#idea-card-two {
+    background-color: #185972;
+}
+
+#title-big-idea {
+    padding: 0px 100px;
+}
+
+.idea-card .idea-para {
+    display: flex;
+    flex-direction: column;
+    color: #BFBFB8;
+}
+
+.idea-card .images {
+    display: flex;
+    margin: auto;
+    padding: 5%;
+}
+
+        
+.title-cards {
+    display: flex; 
+    background-color: #A4A69C;
+}
+
+.title-card {
+    margin: auto;
+}
+
+
 .link {
     border-bottom:#BFBFB8 solid;
     border-width: 2px;
+    max-width: 33%;
+
+}
+
+.link h3 {
+    margin: 0% 30%;
 }
 
 .link li {
@@ -69,35 +114,6 @@ body {
 
 }
 
-.idea-card {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.idea-card .idea-para {
-    display: flex;
-    flex-direction: column;
-    color: #BFBFB8;
-}
-
-.idea-card .images {
-    display: flex;
-    margin: auto;
-    padding: 5%;
-}
-
-        
-#title-cards {
-    display: flex;
-    flex-direction: column;
-    background-color: #A4A69C;
-    width: auto;
-}
-.title-card {
-    margin: auto;
-}
-
 .title-card h3 {
     display: flex;
     justify-content: center;
@@ -111,8 +127,12 @@ body {
     display: flex;
     justify-content: center;    
     color: #35403A;    
-
 }
+
+.title-part-two {
+    background-color: #3a6677;
+}
+
 
 
 h1 {
@@ -126,6 +146,49 @@ h2 {
 h3 {
     color: #A4A69C;
 }
+
+
+
+.title-part-one {
+    width: 85%;
+    margin: auto;
+}
+
+.title-part-one-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-part-one-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-part-two {
+    width: 100%;
+}
+
+.title-part-three {
+    width: 85%;
+    margin: auto;
+}
+
+.title-part-three-top {
+    display: flex;
+    flex-direction: column;
+}        
+
+.title-part-three-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title-cards {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
@@ -148,6 +211,9 @@ h3 {
             display: flex;
             flex-direction: row;
         }
+        .ideas {
+            flex: 3;
+        }
         .link-and-idea {
             display: flex;
             border-bottom: #BFBFB8 solid;
@@ -157,12 +223,39 @@ h3 {
             border-bottom: none;
             border-width: 2px;
             margin-right: 2%;
-        }
-        .ideas {
-            flex: 3;
+        }     
+
+        .title-cards {
+            display: flex;
+            flex-direction: row;
         }
 
-        #title-cards {
+        .title-part-one-top {
+            display: flex;
+            flex-direction: row;
+        }
+        .title-part-one-bottom {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .title-part-one {
+            width: 33%;
+            max-width: 33%;
+            margin-top: 0;
+        }
+        .title-part-two {
+            max-width: 22%;
+        }
+        .title-part-three {
+            max-width: 45%;
+            margin-top: 0;
+        }
+        .title-part-three-top {
+            display: flex;
+            flex-direction: row;
+        }
+        .title-part-three-bottom {
             display: flex;
             flex-direction: row;
         }
