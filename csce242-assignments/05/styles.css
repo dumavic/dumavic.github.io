@@ -37,12 +37,12 @@ header {
     text-align: center;
 }
 
-#column-one {
+#column-one {   
+    padding-bottom: 10%;
     flex: 1;
 }
 
 #column-two {
-    
     flex: 1;
 }
 
@@ -50,7 +50,20 @@ header {
     flex: 1;
 }
 
-.five-pointed-star {
+#column-two-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#column-two input {
+
+}
+
+
+/* .five-pointed-star {
     --star-color:orange;
     margin:1em auto;
     font-size:3em;
@@ -88,7 +101,7 @@ header {
     border-left: 1em solid transparent;
     transform: rotate(-70deg);
     content:"";
-   }
+   } */
 
    @media only screen and (max-width: 1020px) {
 
