@@ -103,6 +103,10 @@ header {
     content:"";
    } */
 
+   .footer-div {
+    text-align: center;
+    margin-top: 50px;
+}
    @media only screen and (max-width: 1020px) {
 
 .columns {
@@ -128,5 +132,6 @@ header {
 #add-stars {
     min-height: 300px;
 }
+
 
    }
