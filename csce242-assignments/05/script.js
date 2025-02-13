@@ -29,7 +29,7 @@ colorPicker.addEventListener('input', changeColor);
 
 const addHello = () => {
 
-    const playground = document.getElementById("hello-playground");
+    // const playground = document.getElementById("hello-playground");
     const result = document.getElementById("hello-result");
     const newP = document.createElement('p');
     const paragraphContent = document.createTextNode('Hello');

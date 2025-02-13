@@ -60,13 +60,7 @@ header {
     padding: 10px 0;
 }
 
-.column .slidecontainer {
-    margin: auto;
-}
 
-.slidecontainer input {
-    min-width: 280px;
-}
 
 .dropdown {
     display: none;
@@ -77,6 +71,46 @@ header {
 }
 
 .nav #exercise-two-toggle:hover {
+    color: white;
+}
+
+#changeImg {
+    display: none;
+}
+
+
+#heart-content {
+    margin-left: 3%;
+}
+
+#heart-content button {
+    padding: 10px 15px;
+}
+
+#green-btn {
+    border: 2px solid #04AA6D;
+}
+
+#red-btn {
+    border: 2px solid #aa0404;
+}
+
+#blue-btn {
+    border: 2px solid #0423aa;
+}
+
+#green-btn:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+}
+
+#red-btn:hover {
+    background-color: #aa0404; /* Green */
+    color: white;
+}
+
+#blue-btn:hover {
+    background-color: #0423aa; /* Green */
     color: white;
 }
 
