@@ -12,6 +12,7 @@ header {
 }
 
 .container {
+  
 }
 
 .columns {
@@ -19,16 +20,14 @@ header {
     justify-content: center;
 }
 
-.show-hide {
-    display: none;
-}
 
-#exercise-one-img {
+#ladder-exercise {
+  display: flex;
+  justify-content: center;
     margin: 2em;
     border: 1px solid #215338;
-    height: 540px;
-    background-color: white;
-    text-align: center;
+    height: 500px;
+    background-color: rgb(70, 110, 77);
 }
 
 .columns .column {
@@ -42,46 +41,19 @@ header {
   min-width: 50%;
 }
 
-#yoga-column {
-    display: flex;
-}
-
-#yoga-column .column {
-  display: flex;
-  min-width: 800px;
-}
-
-#yoga-column .column .yoga-exercise {
-  display: flex;
-}
-
-#yoga-column #yoga-images {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-#yoga-column #yoga-text {
-  margin: 3em .5em;
-  flex: 1;
-}
-
-#bounce-ball {
+#ladder-container {
     text-align: center;
 }
 
-#bounce-ball button {
+#ladder-container button {
     background-color: #215338;
     border: none;
     color: white;
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 1.2em;
 }
-
 
 .column img {
     margin: auto;
@@ -93,21 +65,40 @@ header {
     color: white;
     text-align: center;
 }
-
-.dropdown {
-    display: none;
+.actual-ladder {
+display: flex;
+flex-direction: column;
+}
+.ladder {
+  position:relative;
+  width: 60px;
+  height: 220px;
+  border-left: 5px solid rgb(10, 10, 10);
+  border-right: 5px solid rgb(32, 32, 32);
+  display: none;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.rung {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: rgb(26, 26, 26);
+  left: 5px;
+}
+.stick-figure {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
 }
 
-.nav #exercise-one-toggle:hover {
-    color: white;
-    cursor: pointer;
+#stickFigure {
+  display: none;
 }
-
-.nav #exercise-two-toggle:hover {
-    color: white;
-    cursor: pointer;
+#btn-climb {
+  display: none;
 }
-
 
 #myImage {
     position: relative; /* Allow for precise movement within the container */
@@ -185,3 +176,4 @@ header {
     max-width: 50%;
   }
 }
+
