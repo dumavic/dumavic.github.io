@@ -10,7 +10,6 @@ class Pizza {
         this.cheese = cheese;
         this.price = price;
         this.image = image;
-
     }
     
 get item() {
@@ -84,7 +83,6 @@ get item() {
 
 expandContract(e) {
     const section = e.currentTarget.closest("section.pizza").querySelector(".more");
-
     section.classList.toggle("hidden");
 };
 
