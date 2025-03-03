@@ -21,33 +21,50 @@ header {
 
 .columns .columns-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: row;
 }
 
-.tree {
+.pizza {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 600px;
+    min-width: 270px;
 }
-.columns .columns-list #tree-column {
+
+#pizza-list {
+    display: flex;
+}
+
+.columns .columns-list #pizza-column {
     color: white;
     background-color: #35403A;
-    margin: 0 0 10% 0;
+    margin: 0 0 5% 0;
 }
 
 .image-section {
-    margin-bottom: 8%;
+    margin-bottom: 10%;
 }
 
 .image-section img {
     height: auto;
-    width: 300px;
+    width: 220px;
+    height: 220px;
 }
 
 .hidden {
     display: none;
   }
+
+#close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
 
 .more {
     position: fixed; /* Stay in place */

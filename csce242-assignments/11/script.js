@@ -1,15 +1,14 @@
 
-class Tree {
+class Pizza {
 
     // constructor
-    constructor(title, growth, height, lifespan, habitat, description, image) {
+    constructor(title, ingredients, sauce, cheese, price, image) {
         
         this.title = title;
-        this.growth = growth;
-        this.height = height;
-        this.lifespan = lifespan;
-        this.habitat = habitat;
-        this.description = description;
+        this.ingredients = ingredients;
+        this.sauce = sauce;
+        this.cheese = cheese;
+        this.price = price;
         this.image = image;
 
     }
@@ -18,8 +17,8 @@ get item() {
 
     // first section
     const section = document.createElement("section");
-    section.classList.add("tree");
-    section.setAttribute("id", "tree-column")
+    section.classList.add("pizza");
+    section.setAttribute("id", "pizza-column")
 
     const h2 = document.createElement("h2");
     h2.innerHTML = this.title;
@@ -29,8 +28,11 @@ get item() {
     imageView.classList.add("image-section");
     const imgView = document.createElement("img");
     imgView.src = "./images/" + this.image;
+    console.log("img", imgView.src)
     imageView.append(imgView);
     section.append(imageView);
+
+    
 
 
     // second sections
@@ -41,20 +43,17 @@ get item() {
     h3.innerHTML = this.title;
     moreSection.append(h3);
 
-    const growth = this.paragraph("Growth Rate", this.growth);
-    moreSection.append(growth);
+    const ingredients = this.paragraph("Ingredients", this.ingredients);
+    moreSection.append(ingredients);
 
-    const height = this.paragraph("Height", this.height);
-    moreSection.append(height);
+    const sauce = this.paragraph("Sauce", this.sauce);
+    moreSection.append(sauce);
 
-    const lifespan = this.paragraph("Lifespan", this.lifespan);
-    moreSection.append(lifespan);
+    const cheese = this.paragraph("Cheese", this.cheese);
+    moreSection.append(cheese);
 
-    const habitat = this.paragraph("Habitat", this.habitat);
-    moreSection.append(habitat);
-
-    const description = this.paragraph("Description", this.description);
-    moreSection.append(description);
+    const price = this.paragraph("Price", this.price);
+    moreSection.append(price);
 
     const imageSection = document.createElement("section");
     imageSection.classList.add("image-section");
@@ -65,13 +64,26 @@ get item() {
 
     section.append(moreSection);
 
+        // Close button
+        const closeButton = document.createElement("span");
+        closeButton.innerHTML = "&#10006;"; // 'X' symbol
+        closeButton.setAttribute("id", "close-popup");
+        closeButton.classList.add("close-btn");
+    
+        closeButton.addEventListener("click", (e) => {
+            e.stopPropagation(); // Prevent triggering the section click event
+            moreSection.classList.add("hidden"); // Hide the popup
+        });
+    
+        moreSection.append(closeButton);
+
     section.addEventListener("click", this.expandContract);
 
     return section;
 }
 
 expandContract(e) {
-    const section = e.currentTarget.closest("section.tree").querySelector(".more");
+    const section = e.currentTarget.closest("section.pizza").querySelector(".more");
 
     section.classList.toggle("hidden");
 };
@@ -85,17 +97,14 @@ paragraph(title, info) {
 }
 
 
-const trees = [];
+const pizzas = [];
 
-trees.push(new Tree("Bald Cypress", "Medium Growth", "60 ft", "70 years", "Wet, swampy soils of floodplains lakes","Taxodium distichum is a deciduous conifer in the family Cupressaceae. It is native to the southeastern United States. Hardy and tough, this tree adapts to a wide range of soil types, whether wet, salty, dry, or swampy. It is noted for the russet-red fall color of its lacy needles", "bald-cypress.jpg"));
-trees.push(new Tree("Eastern Redbud", "Fast Growth", "20 ft", "60 years", "Forest understory","Eastern redbud is a small deciduous tree. Trees typically grow 20 feet in height with a similar spread and have gracefully ascending branches and a rounded shape. Eastern redbud leaves are alternate, simple, broadly heart-shaped and 3 to 5 inches high and wide. Leaves emerge reddish, turning green as they expand.", "eastern-redbud.jpeg"));
-
-trees.push(new Tree("Loblolly Pine", "Fast Growth", "6 ft", "30 years", "Soils with poor surface drainage, firm subsoil","The loblolly pine is an important American timber tree that is also cloaked in beauty during much of the year. With a natural range reaching across the southeastern United States, this pine is distinguished by its large, columnar trunk; attractive bark in broad, reddish-brown plates; and pale green needles. As one of the fastest-growing southern pines, it is used for a quick screen in many landscapes.", "loblolly-pine.jpeg"));
-
-trees.push(new Tree("Southern Magnolia", "Fast Growth", "70 ft", "30 years", "Soils with poor surface drainage, firm subsoil","One of the most beautiful native trees, evergreen with straight trunk, conical crown, and very fragrant, very large, white flowers. They are cup-shaped, about 8 inches across, with 6 thick petals, wider at the tip, where they are cupped. The blossoms open about 9:00 A.M. and close at night for 2 or 3 days; then all the stamens are shed and the flower reopens, turns brown, and disintegrates. The flowers appear throughout the summer and into fall. The flowers produce conelike seedpods that contain large red seeds. When the pods open, the seeds often fall from their place and hang by silky threads.", "southern-magnolia.jpg"));
-
-
-trees.forEach((tree) => {
-    document.getElementById("tree-list").append(tree.item);
+pizzas.push(new Pizza("Margherita", "Tomatoes, cheese, garlic, oregano", "Extra virgin olive oil, red tomato sauce", "Mozzarella" ,"$15.99", "margherita.jpg"));
+pizzas.push(new Pizza("Chicago", "Tomatoes, cheese, meat, mushrooms, onions, peppers", "Red tomato sauce", "Mozzarella, parmesan" ,"$20.99", "chicago.jpg"));
+pizzas.push(new Pizza("New York", "Tomatoes, cheese, meat", "Red tomato sauce ", "Mozzarella" ,"$13.99", "newyork.jpg"));
+pizzas.push(new Pizza("Sicilian", "Tomatoes, cheese, onion, anchovies, herbs", "Red tomato sauce, olive oil blend", "Mozzarella or none" ,"$18.99", "sicilian.jpg"));
+pizzas.push(new Pizza("Greek", "Tomatoes, cheese mix, black olives, red onions, other veggies", "Tomato paste sauce", "Mozzarella, cheddar, provolone, feta" ,"$17.99", "greek.jpg"));
+pizzas.forEach((pizza) => {
+    document.getElementById("pizza-list").append(pizza.item);
 });
 
