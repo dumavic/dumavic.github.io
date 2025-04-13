@@ -1,0 +1,7 @@
+.item-page-container {
+  margin: 5% 0;
+  padding: 5% 0;
+  background-color: var(--pale-gray);
+  display: flex;
+}
+

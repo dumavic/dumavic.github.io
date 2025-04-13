@@ -1,0 +1,55 @@
+/* about us page */
+
+#about-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  #about-container #about-container-top {
+    
+  }
+  
+  #about-container #about-container-top img {
+    max-width: 40%;
+  }
+  
+  #about-container #about-container-bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  
+  #about-container #about-container-bottom p {
+    margin: 2em 10em;
+    max-width: 70%;
+  }
+  
+  /* end of about page */
+  
+  @media only screen and (max-width:1020px) {
+    #about-container {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+    }
+    
+    #about-container #about-container-top {
+      max-width: fit-content;
+      
+    }
+    
+    #about-container #about-container-top img {
+      max-width: 60%;
+    }
+    
+    #about-container #about-container-bottom {
+      display: flex;
+      justify-content: center;
+    }
+    
+    #about-container #about-container-bottom p {
+      margin: 10% 1%;
+    }
+    
+  }

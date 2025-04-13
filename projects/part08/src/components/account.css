@@ -1,0 +1,161 @@
+.account-page {
+    min-height: 100px;
+}
+
+/* inventory */
+.inventory-top {
+    background-color: var(--almost-white);
+    margin-bottom: 1%;
+    padding: 2%;
+    min-height: 100px;
+}
+
+/* my orders */
+.my-orders-top {
+    background-color: var(--almost-white);
+    margin-bottom: 1%;
+    padding: 2%;
+    min-height: 100px;
+}
+
+.my-orders-top svg {
+    height: 40px;
+}
+
+.my-orders-bot {
+    background-color: var(--almost-white);
+}
+
+.my-orders-bot .orders {
+    display: flex;
+    flex-direction: column;
+}
+
+.orders .order {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    margin: 1% 10%;
+}
+
+.order .order-img {
+    margin-top: 2%;
+}
+
+.order .order-img img {
+    height: 100px;
+}
+
+.order .order-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-info h4 {
+    margin-bottom: 0;
+}
+
+.order-info p {
+    margin: 0;
+}
+
+.order-info .order-status {
+    font-size: 1.2em;
+}
+
+.order-info .delivery-time {
+    font-size: .75em;
+}
+
+.order .track-order-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.order .track-order-btn span {
+    letter-spacing: 1.2px;
+    background-color: white;
+    color:var(--tinted-black);
+    cursor: pointer;
+    padding: 2% 4%;
+}
+
+.order .track-order-btn span:hover {
+    background-color: var(--tinted-black);
+    color: white;
+}
+
+/* end of my orders */
+
+
+/* payment-methods */
+.payment-methods-top {
+    background-color: var(--almost-white);
+    margin-bottom: 1%;
+    padding: 2%;
+    min-height: 200px;
+}
+
+.payment-methods-top svg {
+    height: 40px;
+}
+
+.payment-methods-top h2 {
+    letter-spacing: 5px;
+    font-size: 1.5em;
+    margin-bottom: 3%;
+}
+
+.payment-methods-top span {
+    letter-spacing: 1.2px;
+    background-color: white;
+    color:var(--tinted-black);
+    cursor: pointer;
+    padding: 1.5% 1%;
+}
+
+.payment-methods-top span:hover {
+    background-color: var(--tinted-black);
+    color: white;
+}
+
+.payment-methods-bot {
+    background-color: var(--almost-white);
+}
+
+.payment-methods-bot .cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .card {
+    display: flex;
+}
+
+.card .card-img {
+    margin-top: 2%;
+    flex: 1;
+}
+
+.card .card-img svg {
+    height: 30px;
+}
+
+.card .card-info {
+    flex: 10;
+}
+
+.card .delete-btn {
+    margin-top: 2%;
+    flex: 2;
+}
+
+.card .delete-btn svg {
+    height: 30px;
+}
+
+/* end of payment method */
+

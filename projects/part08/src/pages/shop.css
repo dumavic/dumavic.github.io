@@ -1,0 +1,108 @@
+/* shop page */
+#shop-page-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8% 0;
+  }
+  
+  #shop-page-mid .filter {
+    margin-left: 5%;
+  }
+    
+  #shop-page-mid .filter p {
+    letter-spacing: 2px;
+    font-size: 1.2em;
+  }
+  
+  #shop-page-mid .shop-type-tag {
+    margin: 3em 0 0 5em;
+    }
+
+    #shop-page-mid .shop-type-tag b {
+      font-weight: 800;
+      font-size: 1.2em;
+      letter-spacing: 3px;
+    }
+  
+  #shop-page-mid #item-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  #shop-page-mid #item-container #shop-items-top{
+    margin: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #shop-page-mid #item-container #shop-items-bot{
+    margin: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #shop-page-mid #item-container .shop-item {
+    display: flex;
+    margin: 0 1.5em;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  #shop-page-mid #item-container .shop-item img {
+    height: 330px;
+    width: 330px;
+  }
+
+  @media only screen and (max-width: 1020px) {
+
+    #shop-page-mid {
+      display: flex;
+      flex-direction: column;
+      margin: 8% 0;
+    }
+    
+    #shop-page-mid .filter {
+      margin-bottom: 50px;
+      justify-content: center;
+    }
+  
+    #shop-page-mid #item-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #shop-page-mid #item-container #shop-items-top{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    #shop-page-mid #item-container #shop-items-bot{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    
+    #shop-page-mid #item-container .shop-item {
+      max-width: 100%;
+      display: flex;
+      margin: 0 1em;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  
+    #shop-page-mid #item-container .shop-item img {
+      height: 300px;
+      width: 300px;
+    }
+
+      
+  #shop-page-mid .shop-type-tag {
+    margin: 0;
+    }
+    
+  }
