@@ -11,6 +11,7 @@ const PaymentPop = ({ onClose, onAdd }, props) => {
         exp: '',
     });
 
+
     const onSubmit = async (event) => {
         event.preventDefault()
         setResult("sending...")
