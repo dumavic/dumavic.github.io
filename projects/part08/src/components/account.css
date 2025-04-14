@@ -10,6 +10,55 @@
     min-height: 100px;
 }
 
+.inventory-top span {
+    letter-spacing: 1.2px;
+    background-color: white;
+    color:var(--tinted-black);
+    cursor: pointer;
+    padding: 1% 1%;
+}
+
+.inventory-top span:hover {
+    background-color: var(--tinted-black);
+    color: white;
+}
+
+.inventory-bot {
+    display: flex;
+}
+.inventory-bot .inventory-items {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.inventory-items .inventory-item {
+    display: flex;
+    max-width: 33%;
+}
+
+
+.inventory-item .inventory-item-img {
+    margin: 1em 5% 1em 5%;
+  }
+  
+.inventory-item img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .ionventory-item-info h4 {
+    display: flex;
+    font-size: 1.5em;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    color: var(--tinted-black);
+  }
+
+  .inventory-item-info p {
+    display: flex;
+    font-size: .8em;
+  }
+
 /* my orders */
 .my-orders-top {
     background-color: var(--almost-white);

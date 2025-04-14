@@ -2,3 +2,47 @@
     display: block;
 }
 
+.form-container {
+    width: fit-content;
+    padding: 1%;
+    margin: 3% 0;
+    position: relative;
+    background-color: rgb(209, 209, 209);
+  }
+
+  #add-item-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #add-item-form p {
+    margin: 1% 0;
+  }
+
+.close-btn {
+    position: absolute;
+    top: -2%;
+    right: -1%;
+}
+
+#add-payment-form {
+  display: block;
+}
+
+
+#add-payment-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#add-payment-form p {
+  margin: 1% 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: -2%;
+  right: -1%;
+}

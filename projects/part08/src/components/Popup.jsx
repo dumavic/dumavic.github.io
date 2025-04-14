@@ -12,7 +12,7 @@ const Popup = (props) => {
 
         const formData = new FormData(event.target);
         
-        const response = await fetch("http://localhost:3000/json/items", {
+        const response = await fetch("https://react-backend-dbmn.onrender.com/api/items", {
             method: "POST",
             body: formData,
         });
@@ -20,7 +20,7 @@ const Popup = (props) => {
         if (response.status === 200) {
             setResult("item successfully added");
             event.target.reset();
-            // props.addItem(await response.json());
+            props.addItem(await response.json());
             props.closeDialog();
         }
         else {
@@ -43,13 +43,10 @@ const Popup = (props) => {
 
 
     return (
-        <div>
-            item name, item page run from item name.html, price, sizes, img_name, description, 
-            collectionType, best seller tag, newest arrival tag, detail tag
-
+        <div className='form-container'>
             <span id="dialog-close" 
-            className='w3-button w3-display-topright' 
-            onClick={props.closeDialog}>
+            className='close-btn' 
+            onClick={props.closeAddDialog}>
                 &times;
             </span>
             <form id='add-item-form' onSubmit={onSubmit}>
@@ -100,7 +97,7 @@ const Popup = (props) => {
                     <input type="text" id="collectionType" name="collectionType" 
                     value={inputs.collectionType || ""} 
                     onChange={handleChange}
-                    required />
+                     />
                 </p>
 
                 <p>
@@ -108,7 +105,7 @@ const Popup = (props) => {
                     <input type="checkbox" id="best_seller" name="best_seller" 
                     value={inputs.best_seller || ""} 
                     onChange={handleChange}
-                    required/>
+                    />
                 </p>
 
                 <p>
@@ -116,11 +113,11 @@ const Popup = (props) => {
                     <input type="checkbox" id="newest_arrival" name="newest_arrival" 
                     value={inputs.newest_arrival || ""} 
                     onChange={handleChange}
-                    required/>
+                    />
                 </p>
 
                 <p>
-                    <button type="submit">Submit</button>
+                    <span type="submit" onClick={props.addItem}>Submit</span>
                 </p>
             </form>
         </div>
