@@ -23,25 +23,18 @@ const Account = (props) => {
 
     useEffect(() => {
         (async () => {
-          try {
-            const response = await axios.get("http://localhost:3001/api/payment_methods");
-
+            const response = await axios.get("https://react-backend-dbmn.onrender.com/api/payment_methods");
             const responseItem = await axios.get("https://react-backend-dbmn.onrender.com/api/items");
 
             setShopItems(responseItem.data);
             setPaymentMethods(response.data);
-
-            console.log(responseItem.data, "response");
-          } catch (error) {
-            console.error("Error fetching payment methods:", error.message || error);
-          }
         })();
       }, []);
       
 
-      const addItem = (shopItem) => {
+    const addItem = (shopItem) => {
         setShopItems((shopItems) => [...shopItems, shopItem]);
-      }
+    }
       
     const openAddDialog = () => {
         setShowAddDialog(true);
@@ -50,7 +43,6 @@ const Account = (props) => {
     const closeAddDialog = () => {
         setShowAddDialog(false);
     } 
-
 
     if(props.name === "inventory") {
         return (
@@ -66,7 +58,7 @@ const Account = (props) => {
                 <div className='inventory-bot'>
                     <div className='inventory-items'>
                 {shopItems.map((shopItem) => {
-            const imgSrcName = `https://dumavic.github.io/projects/part6/images/${shopItem.img_name}`;  
+                    const imgSrcName = `https://react-backend-dbmn.onrender.com/uploads/${shopItem.img_name}`;
             return <InventoryItem key={shopItem.item_id} img_name={imgSrcName} item_name={shopItem.item_name} price={shopItem.price} description={shopItem.description} collectionType={shopItem.collectionType} addItem={addItem}/>
         })}
                     </div>

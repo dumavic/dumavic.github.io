@@ -11,10 +11,9 @@ const ItemPage = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await axios.get(
-        "https://dumavic.github.io/projects/part6/json/items.json"
-      );
-      setShopItems(response.data);
+      const responseItem = await axios.get("https://react-backend-dbmn.onrender.com/api/items");
+
+      setShopItems(responseItem.data);
     })();
   }, []);
 
@@ -35,7 +34,7 @@ const ItemPage = () => {
     <section className="item-page-container" id={`item-`+ item.item_id}>
         <ShopItems
           key={item.item_id}
-          img_name={`https://dumavic.github.io/projects/part6/images/${item.img_name}`}
+          img_name={`https://react-backend-dbmn.onrender.com/uploads/${item.img_name}`}
           item_name={item.item_name}
           price={item.price}
           description={item.description}

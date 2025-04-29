@@ -10,9 +10,7 @@ function Shop() {
     const [shopItems, setShopItems] = useState([]);
     useEffect(() => {
         (async () => {
-            const response = await axios.get(
-                "https://dumavic.github.io/projects/part6/json/items.json"
-            );
+            const response = await axios.get("https://react-backend-dbmn.onrender.com/api/items");
             setShopItems(response.data);
         })();
     }, []);

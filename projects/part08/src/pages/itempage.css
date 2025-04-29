@@ -3,5 +3,5 @@
   padding: 5% 0;
   background-color: var(--pale-gray);
   display: flex;
+  justify-content: center;
 }
-

@@ -11,17 +11,16 @@ const Popup = (props) => {
         setResult("sending...")
 
         const formData = new FormData(event.target);
-        
         const response = await fetch("https://react-backend-dbmn.onrender.com/api/items", {
-            method: "POST",
-            body: formData,
+          method: "POST",
+          body: formData,
         });
 
         if (response.status === 200) {
             setResult("item successfully added");
             event.target.reset();
             props.addItem(await response.json());
-            props.closeDialog();
+            props.closeAddDialog();
         }
         else {
             console.log("ERROR: ADDING ITEM",response);
@@ -69,18 +68,19 @@ const Popup = (props) => {
                 <p id='img-prev-section'>
                     <img
                     id='img-prev'
-                    src={
-                        inputs.img_name != null ? URL.createObjectURL(inputs.img_name) : ""
-                    }
+                    src={inputs.img_name != null ? URL.createObjectURL(inputs.img_name) : null}
                     alt=""
                     />
                 </p>
 
                 <p id="img-upload">
                     <label htmlFor="img_name">Upload Image:</label>
-                    <input type="file" id="img_name" name="img_name" 
+                    <input 
+                    type="file" 
+                    id="img_name" 
+                    name="img_name" // The name must match the one used in backend
                     onChange={handleImageChange} 
-                    accept="image/*"
+                    accept="image/*" 
                     />
                 </p>
 
@@ -117,7 +117,7 @@ const Popup = (props) => {
                 </p>
 
                 <p>
-                    <span type="submit" onClick={props.addItem}>Submit</span>
+                    <button type="submit" onClick={props.addItem}>Submit</button>
                 </p>
             </form>
         </div>

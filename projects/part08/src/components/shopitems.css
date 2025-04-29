@@ -68,6 +68,11 @@
   font-weight: bold;         /* Bold text to indicate selection */
   border: 1px solid var(--tinted-black);
 }
+
+.sizes.selected:active {
+  background-color: var(--tinted-black);
+  color: var(--almost-white);
+}
   
 .add-to-cart {
     background-color: var(--almost-white);

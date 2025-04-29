@@ -18,7 +18,7 @@ const PaymentPop = ({ onClose, onAdd }, props) => {
 
         const formData = new FormData(event.target);
 
-        const response = await fetch("http://localhost:3001/api/payment_methods", {
+        const response = await fetch("https://react-backend-dbmn.onrender.com/api/payment_methods", {
             method: "POST",
             body: formData,
         });
